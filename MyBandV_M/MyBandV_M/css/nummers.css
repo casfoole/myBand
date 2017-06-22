@@ -1,0 +1,93 @@
+@media only screen and (min-width: 930px) {
+    #pablo {
+        flex: 0 0 67%;
+        margin-top: 13%;
+        display: inline-block;
+    }
+
+    #yeezus {
+        flex: 0 0 67%;
+        margin-top: 13%;
+        display: inline-block;
+    }
+
+    #darkfantasy {
+        flex: 0 0 67%;
+        margin-top: 13%;
+        display: inline-block;
+    }
+
+    #heartbreak {
+        flex: 0 0 67%;
+        margin-top: 13%;
+        display: inline-block;
+    }
+
+    #tunes {
+        display: inline-block;
+    }
+
+    #albumnaam {
+        display: block;
+        padding-left: 70px;
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 40px;
+
+    }
+
+    #albumnaam2 {
+        font-size: 30px;
+        display: block;
+        padding-left: 70px;
+        font-family: 'Covered By Your Grace', cursive;
+    }
+
+    #albumtxt {
+        flex: 0 0 33%;
+        margin-top: 6%;
+
+    }
+
+    #albuminhoud {
+        padding: 15px;
+        font-size: 30px;
+        font-family: 'Just Another Hand', cursive;
+
+    }
+
+    #wrapper {
+        display: flex;
+        width: 100%;
+    }
+}
+
+
+#tunes {
+    display: inline-block;
+}
+#albumnaam {
+    display: block;
+    padding-left: 70px;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 40px;
+
+}
+
+#albumnaam2 {
+    font-size: 30px;
+    display: block;
+    padding-left: 70px;
+    font-family: 'Covered By Your Grace', cursive;
+}
+    #albumtxt{
+        margin-top: 6%;
+    }
+#albuminhoud {
+    padding: 15px;
+    font-size: 30px;
+    font-family: 'Just Another Hand', cursive;
+
+}
+    #pablo{
+        margin-top: 13%;
+    }

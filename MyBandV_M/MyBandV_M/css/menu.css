@@ -1,0 +1,90 @@
+#menuhome {
+    color: black;
+    position: relative;
+    text-decoration: none;
+    text-decoration: crimson;
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 25px;
+}
+#menuhome:after {
+    background-color: crimson;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: .8px;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    transition: width .5s;
+    width: 0;
+}
+#menuhome:hover:after {
+    width: 55%;
+}
+#menumusic {
+    color: black;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 25px;
+}
+#menumusic:after {
+    background-color: crimson;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: .8px;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    transition: width .5s;
+    width: 0;
+}
+#menumusic:hover:after {
+    width: 55%;
+}
+#menuschema {
+    color: black;
+    position: relative;
+    text-decoration: none;
+    text-decoration: crimson;
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 25px;
+}
+#menuschema:after {
+    background-color: crimson;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: .8px;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    transition: width .5s;
+    width: 0;
+}
+#menuschema:hover:after {
+    width: 55%;
+}
+#menuabout {
+    color: black;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 25px;
+}
+#menuabout:after {
+    background-color: crimson;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: .8px;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    transition: width .5s;
+    width: 0;
+}
+#menuabout:hover:after {
+    width: 55%;
+}

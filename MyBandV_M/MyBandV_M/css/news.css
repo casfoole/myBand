@@ -1,0 +1,41 @@
+#newsDiv{
+    display: inline-block;
+    border-left: solid 1px darkgrey;
+    border-bottom: solid 1px darkgrey;
+    border-right: solid 1px darkgrey;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-left: 14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#newsTitel{
+    font-family: 'Philosopher', sans-serif;
+    width: 30%;
+}
+#content{
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+    display: inline-block;
+    width: 65%;
+}
+#newsImage {
+    display: inline-block;
+    width: 20%;
+    float: right;
+    padding-right: 30px;
+}
+@media only screen and (max-width: 376px) {
+    #content{
+        font-family: 'Kalam', cursive;
+        font-size: 20px;
+        display: inline-block;
+        width: 100%;
+    }
+    #newsImage {
+        display: inline-block;
+        width: 0%;
+        float: right;
+        padding-right: 30px;
+    }
+}
