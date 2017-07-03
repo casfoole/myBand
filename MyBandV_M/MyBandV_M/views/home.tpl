@@ -2,38 +2,37 @@
     <div id="banner">
         <img src="" id="bannerimg">
     </div>
-    {foreach from=$home_list item=new}
-        <div id="newsDiv">
-            <img id="newsImage" src="{$new.image}">
 
-            <h3 id="newsTitel">{$new.titel}</h3>
-
-            <p id="content">{$new.content}</p>
-
-        </div>
-        {/foreach}
 </content>
-<p id="pagenumber">Page {$page}</p>
+
+<content class="wrap">
+
+{foreach from=$result item=oneItem}
+    <div id="newsDiv">
+       <img id="newsImage" src="{$oneItem.image}">
+
+        <h3 id="newsTitel">{$oneItem.titel}</h3>
+
+        <p id="content">{$oneItem.content}</p>
+
+    </div><br>
+{/foreach}
+
+<center>
+
 <table id="pagechanger">
     <tr><td id="left">
             {if $page gt 1}
-                <a href="?url=home&page={$page-1}">Previous</a>
+                <a href="?url=home&page={$page-1}" style="margin-right: 2px" id="left" >Previous</a>
             {/if}
         </td>
+        <p id="pagenumber" style="font-family: 'Abel', sans-serif">Page {$page}</p>
         <td id="right">
             {if $page lt $number_of_pages}
-                <a href="?url=home&page={$page+1}">Next</a>
+                <a href="?url=home&page={$page+1}" style="margin-left: 2px" id="right">Next</a>
             {/if}
         </td>
     </tr>
 </table>
-{foreach from=$result item=oneItem}
-    <table class="content">
-        <tr><td><h3>{$oneItem.id}</h3></td></tr>
-        <tr><td><h3>{$oneItem.title}</h3></td></tr>
-        <tr><td><h3>{$oneItem.content}</h3></td></tr>
-        <tr><td><h3>{$oneItem.date_created|date_format:"%e %B %Y"}</h3></td></tr>
-
-    </table><br>
-
-{/foreach}
+</center>
+</content>

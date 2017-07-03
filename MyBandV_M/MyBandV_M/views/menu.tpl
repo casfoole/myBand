@@ -2,26 +2,26 @@
 <nav class="wrap">
     <ul>
 
-        <li><a id="menuhome" href="?page=home">Home</a></li>
-        <li><a id="menumusic" href="?page=articles">Music</a></li>
-        <li><a id="menuschema" href="?page=tourschema">Tours</a></li>
-        <li><a id="menuabout" href="?page=about">About</a></li>
+        <li><a id="menuhome" href="?url=home">Home</a></li>
+        <li><a id="menumusic" href="?url=articles">Music</a></li>
+        <li><a id="menuschema" href="?url=tourschema">Tours</a></li>
+        <li><a id="menuabout" href="?url=about">About</a></li>
 
     </ul>
 </div>
-        {if $smarty.get.page==home}
+        {if $smarty.get.url==home}
             <script>
                 document.getElementById("menuhome").style.textDecoration = "line-through"
             </script>
-        {elseif $smarty.get.page==articles}
+        {elseif $smarty.get.url==articles}
             <script>
                 document.getElementById("menumusic").style.textDecoration = "line-through"
             </script>
-        {elseif $smarty.get.page==about}
+        {elseif $smarty.get.url==about}
             <script>
                 document.getElementById("menuabout").style.textDecoration = "line-through"
             </script>
-        {elseif $smarty.get.page==tourschema}
+        {elseif $smarty.get.url==tourschema}
             <script>
                 document.getElementById("menuschema").style.textDecoration = "line-through"
             </script>

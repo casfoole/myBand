@@ -15,12 +15,18 @@ $templateParser->display('header.tpl');
 // menu
 $templateParser->display('menu.tpl');
 
-$action = isset($_GET['page']) ? $_GET['page'] : 'home';
+$action = isset($_GET['url']) ? $_GET['url'] : 'home';
 
 switch ($action) {
     case 'home':
-        require_once 'model/gethome.php';
-        $templateParser->assign('home_list',$result_list);
+//        require_once 'model/gethome.php';
+//        $templateParser->assign('home_list',$result_list);
+//        $templateParser->display('home.tpl');
+        include 'model/get_pagination.php';
+        $templateParser->assign('page',$page);
+        include 'model/get_data.php';
+        $templateParser->assign('number_of_pages',$number_of_pages);
+        $templateParser->assign('result',$result);
         $templateParser->display('home.tpl');
         break;
 
@@ -64,6 +70,14 @@ switch ($action) {
         break;
     case 'viewdropout':
         $templateParser->display('viewdropout.tpl');
+        break;
+    case 'login':
+        require_once 'model/inlog.php';
+        $templateParser->display('login.tpl');
+        break;
+    case 'registration':
+        require_once 'model/registration.php';
+        $templateParser->display('registration.tpl');
         break;
 }
 

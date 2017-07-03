@@ -1,10 +1,10 @@
 <?php
-$result_per_page = 4;
+$result_per_page = 3;
 
 $query = "SELECT * FROM news ORDER BY id DESC ";
-$result = mysqli_query($dbc,$query) or die ('Error querying');
+$result = $mysqli->query($query) or die ('Error querying');
 $number_of_result = mysqli_num_rows($result);
-$number_of_pages = ceil($number_of_result / $number_of_pages);
+$number_of_pages = ceil($number_of_result / $result_per_page);
 
 if(!isset($_GET['page'])) {
     $page = 1;
